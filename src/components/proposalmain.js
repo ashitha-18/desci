@@ -4,11 +4,11 @@ import Card from 'react-bootstrap/Card';
 import { donate } from "./SupportTokenWrapper";
 
 
-const AnimalCard = ({
+const ProposalCard = ({
   imageSrc,
   name,
   description,
-  organisation,
+  fund,
   address,
   onDonate,
 }) => {
@@ -33,7 +33,7 @@ const AnimalCard = ({
           <Card.Text>{description}</Card.Text>
           <Card.Text className="text-orange-500">Approx fund needed : 
           </Card.Text>
-          <Card.Text>{organisation}</Card.Text>
+          <Card.Text>{fund}</Card.Text>
           <Card.Text className="text-orange-500">Wallet Address: 
           </Card.Text>
           <Card.Text className="text-orange-300"> 
@@ -68,24 +68,24 @@ const AnimalCard = ({
 };
 
 
-const animals = [
+const proposals = [
   {
     name: "NanoMed Cure for Rare Diseases",
     description: "Developing a groundbreaking nanomedicine approach to treat rare genetic diseases. The research aims to create targeted nanoparticles that can deliver therapeutic agents to affected cells, offering potential cures for conditions with limited treatment options.",
-    organisation: "$500,000",
+    fund: "$500,000",
     address: "0x2Cb96CDb27e6604c8daDB0F22fA3f3b8f39e1182",
     imageSrc: "",
   },
   {
     name: "Blockchain Genome Mapping for Personalized Cancer Treatment",
     description: "Utilizing blockchain technology to securely store and analyze genomic data for cancer patients. The project seeks to create a decentralized, transparent, and secure platform for personalized cancer treatment plans based on individual genetic profiles.",
-    organisation: "$700,000",
+    fund: "$700,000",
     address: "0xee6E56276328b33C6250db0252125A8BaD0E38DE",
     imageSrc: "",
   }
 ];
 
-const Animals = () => {
+const Proposalsmain = () => {
   const [donated, setDonated] = useState(false);
   const [connected, setConnected] = useState(false);
   const connectToMetaMask = async () => {
@@ -127,9 +127,10 @@ const Animals = () => {
           Connect to MetaMask
         </button>
         <div className="animal-card container mx-auto py-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4 text-center" style={{position: "relative", left: '25%'}}>
-        {animals.map((animal, index) => (
+        {proposals.map((proposal, index) => (
           <div key={index} className="w-full px-4 mb-8" >
-            <AnimalCard {...animal} onDonate={handleDonate} />
+            <ProposalCard
+           {...proposal} onDonate={handleDonate} />
           </div>
           
         ))}
@@ -139,4 +140,4 @@ const Animals = () => {
   );
 };
 
-export default Animals;
+export default Proposalsmain;

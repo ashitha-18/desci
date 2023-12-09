@@ -1,47 +1,6 @@
-import { Contract, ethers } from 'ethers';
-import Wildpatron from "../SupportToken.json"; 
-import nft from "./nft.json"
-/*
-export async function donate(amount) {
-  try {
-    console.log(amount);
-    const contract = await getContract();
-    
-    
-    if (!window.ethereum) {
-      console.error("Ethereum not found");
-      return false;
-    }
-    const accounts = await window.ethereum.request({
-      method: 'eth_requestAccounts',
-    });
-    console.log('Connected to MetaMask!', accounts);
-    const am = ethers.parseEther(amount);
-
-  const recipient = "0x5FbDB2315678afecb367f032d93F642f64180aa3";
-  const estimation = await contract.transfer.estimateGas(recipient, am);
-  console.log(estimation);
-  const  provider = new ethers.BrowserProvider(window.ethereum);
-  const  signer = await provider.getSigner();
-  const tx = await signer.sendTransaction({
-    to: recipient,
-    value: am
-  });
-  
-  const receipt = await tx.wait();
-  
-  console.log(receipt);
-
-  return true; // Donation successful
-} catch (error) {
-  console.error("Donation error:", error);
-  return false; // Donation failed
-}
-
-}
-
-*/
-
+import { ethers } from 'ethers';
+import Wildpatron from "../SupportToken.json";
+import nft from "./nft.json";
 
 export async function getContract() {
   const contractAddress = "0x5FbDB2315678afecb367f032d93F642f64180aa3";
@@ -52,8 +11,8 @@ export async function getContract() {
 
     if (ethereum && ethereum.chainId === "0xaa36a7") {
       console.log("hereeee");
-      const  provider = new ethers.BrowserProvider(window.ethereum);
-      const  signer = await provider.getSigner();
+      const provider = new ethers.providers.Web3Provider(window.ethereum);
+      const signer = provider.getSigner();
       const contract = new ethers.Contract(contractAddress, contractABI, signer);
       return contract;
     } else {
@@ -64,6 +23,7 @@ export async function getContract() {
     throw error; // Rethrow the error for handling in the calling function
   }
 }
+
 export async function getContract2() {
   const contractAddress = "0x8F06286c5CfF0AcBc96C8eA289B7F4660981E21C";
   const contractABI = nft.abi;
@@ -73,8 +33,8 @@ export async function getContract2() {
 
     if (ethereum && ethereum.chainId === "0xaa36a7") {
       console.log("hereeee");
-      const  provider = new ethers.BrowserProvider(window.ethereum);
-      const  signer = await provider.getSigner();
+      const provider = new ethers.providers.Web3Provider(window.ethereum);
+      const signer = provider.getSigner();
       const contract = new ethers.Contract(contractAddress, contractABI, signer);
       return contract;
     } else {
@@ -94,17 +54,17 @@ export async function donate(recipient, amount) {
     const accounts = await window.ethereum.request({
       method: 'eth_requestAccounts',
     });
-    
+
     console.log(amount);
-    const am = ethers.parseEther(amount);
+    const am = ethers.utils.parseEther(amount);
     const estimation = await contract.transfer.estimateGas(recipient, am);
     console.log(estimation);
-    const  provider = new ethers.BrowserProvider(window.ethereum);
-    const  signer = await provider.getSigner();
+    const provider = new ethers.providers.Web3Provider(window.ethereum);
+    const signer = provider.getSigner();
     const tx = await signer.sendTransaction({
-    to: recipient,
-    value: am
-  })
+      to: recipient,
+      value: am
+    });
 
     // Wait for the transaction to be mined
     await tx.wait();
@@ -121,7 +81,7 @@ export async function donate(recipient, amount) {
       return false;
     }
   } catch (error) {
-    console.error('Withdrawal error:', error);
+    console.error('Donation error:', error);
     return false;
   }
 }

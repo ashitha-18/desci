@@ -4,11 +4,11 @@ import image from "../images/22.jpeg"
 function OrganizationForm({addAnimalData}) {
     const [organizationName, setOrganizationName] = useState('');
     const [organizationId, setOrganizationId] = useState('');
-    const [animalName, setAnimalName] = useState('');
-    const [animalWalletAddress, setAnimalWalletAddress] = useState('');
-    const [animalImage, setAnimalImage] = useState('');
+    const [proposalName, setproposalName] = useState('');
+    const [researcherAddress, setresearcherAddress] = useState('');
+    const [proposalImage, setproposalImage] = useState('');
     const [donationPurpose, setDonationPurpose] = useState('');
-    const [animalDescription, setAnimalDescription] = useState('');
+    const [proposalDescription, setproposalDescription] = useState('');
 
     
 
@@ -18,20 +18,20 @@ function OrganizationForm({addAnimalData}) {
       const animalData = {
         organizationName,
         organizationId,
-        animalName,
-        animalWalletAddress,
-        animalImage,
+        proposalName,
+        researcherAddress,
+        proposalImage,
         donationPurpose,
-        animalDescription
+        proposalDescription
       };
     
       setOrganizationName('');
       setOrganizationId('');
-      setAnimalName('');
-      setAnimalWalletAddress('');
-      setAnimalImage('');
+      setproposalName('');
+      setresearcherAddress('');
+      setproposalImage('');
       setDonationPurpose('');
-      setAnimalDescription('');
+      setproposalDescription('');
     };
     
     const handleClick = () => {
@@ -86,30 +86,30 @@ function OrganizationForm({addAnimalData}) {
                                             required/>
                                     </div>
                                     <div className="mb-3">
-                                        <label htmlFor="animalName" className="form-label font-weight-bold">Animal Name:</label>
-                                        <input type="text" className="form-control" id="animalName"
-                                            value={animalName}
+                                        <label htmlFor="proposalName" className="form-label font-weight-bold">Animal Name:</label>
+                                        <input type="text" className="form-control" id="proposalName"
+                                            value={proposalName}
                                             onChange={
-                                                (e) => setAnimalName(e.target.value)
+                                                (e) => setproposalName(e.target.value)
                                             }
                                             required/>
                                     </div>
                                     <div className="mb-3">
-                                        <label htmlFor="animalWalletAddress" className="form-label font-weight-bold">Animal Wallet Address:</label>
-                                        <input type="text" className="form-control" id="animalWalletAddress"
-                                            value={animalWalletAddress}
+                                        <label htmlFor="researcherAddress" className="form-label font-weight-bold">Animal Wallet Address:</label>
+                                        <input type="text" className="form-control" id="researcherAddress"
+                                            value={researcherAddress}
                                             onChange={
-                                                (e) => setAnimalWalletAddress(e.target.value)
+                                                (e) => setresearcherAddress(e.target.value)
                                             }
                                             required/>
                                     </div>
 
                                     <div className="mb-3">
-                                        <label htmlFor="animalImage" className="form-label font-weight-bold">Animal Image URL:</label>
-                                        <input type="text" className="form-control" id="animalImage"
-                                            value={animalImage}
+                                        <label htmlFor="proposalImage" className="form-label font-weight-bold">Animal Image URL:</label>
+                                        <input type="text" className="form-control" id="proposalImage"
+                                            value={proposalImage}
                                             onChange={
-                                                (e) => setAnimalImage(e.target.value)
+                                                (e) => setproposalImage(e.target.value)
                                             }
                                             required/>
                                     </div>
