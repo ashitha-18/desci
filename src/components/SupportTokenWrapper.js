@@ -57,7 +57,7 @@ export async function donate(recipient, amount) {
 
     console.log(amount);
     const am = ethers.utils.parseEther(amount);
-    const estimation = await contract.transfer.estimateGas(recipient, am);
+    const estimation = await contract.estimateGas.transfer(recipient, am);
     console.log(estimation);
     const provider = new ethers.providers.Web3Provider(window.ethereum);
     const signer = provider.getSigner();

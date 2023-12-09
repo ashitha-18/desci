@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import { donate } from "./SupportTokenWrapper";
+import second from "../images/second.jpg"
 
 
 const ProposalCard = ({
@@ -70,18 +71,18 @@ const ProposalCard = ({
 
 const proposals = [
   {
-    name: "NanoMed Cure for Rare Diseases",
-    description: "Developing a groundbreaking nanomedicine approach to treat rare genetic diseases. The research aims to create targeted nanoparticles that can deliver therapeutic agents to affected cells, offering potential cures for conditions with limited treatment options.",
+    name: "Nanoparticles in Cancer — Nuffield Department of Women's & Reproductive Health",
+    description: "Our research focuses on the use of nanoparticles in cancer for therapy, imaging or drug delivery. The small size of nanoparticles means that they can passively accumulate in tumours due to the enhanced permeation and retention (EPR) effect. The EPR effect is the property by which certain sizes of molecules accumulate more in tumour tissues than in normal tissues. This occurs because newly formed tumour blood vessels are abnormal in form and architecture, and have poorly-aligned endothelial cells with wide fenestrations through which the molecules can pass. Furthermore, tumour tissues lack efficient lymphatic drainage.",
     fund: "$500,000",
     address: "0x2Cb96CDb27e6604c8daDB0F22fA3f3b8f39e1182",
-    imageSrc: "",
+    imageSrc: "https://images.pexels.com/photos/3900468/pexels-photo-3900468.jpeg?auto=compress&cs=tinysrgb&w=600",
   },
   {
-    name: "Blockchain Genome Mapping for Personalized Cancer Treatment",
-    description: "Utilizing blockchain technology to securely store and analyze genomic data for cancer patients. The project seeks to create a decentralized, transparent, and secure platform for personalized cancer treatment plans based on individual genetic profiles.",
-    fund: "$700,000",
+    name: "Endometriosis Care",
+    description: "Endometriosis results in severe pelvic pain and reduced fertility for millions of women worldwide.  Endometriosis CaRe Oxford is a nationally and internationally acclaimed Centre of Expertise in clinical Care and Research into Endometriosis, part of the Nuffield Department of Women's and Reproductive Health at the University of Oxford. Our research seeks to identify what causes this disease to help improve our understanding of its different forms and to help inform novel drug and non-invasive biomarker discovery programmes.",
+    fund: "$300,000",
     address: "0xee6E56276328b33C6250db0252125A8BaD0E38DE",
-    imageSrc: "",
+    imageSrc: "https://images.pexels.com/photos/6991907/pexels-photo-6991907.jpeg?auto=compress&cs=tinysrgb&w=600",
   }
 ];
 

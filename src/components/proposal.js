@@ -359,7 +359,7 @@ const DeSearchComponent = () => {
   };
 
   const navigateToProposals = () => {
-    history('/proposals');
+    history('/donate');
   };
 
   return (
@@ -403,7 +403,6 @@ const DeSearchComponent = () => {
             onChange={(e) => setFundRequired(e.target.value)}
           />
         </div>
-        {/* ... Repeat the pattern for other form fields ... */}
         <button
           type="button"
           onClick={submitProposal}
