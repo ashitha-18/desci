@@ -14,6 +14,10 @@ DeSearch is a groundbreaking platform that addresses underfunding and lack of fo
 
 ## Pitch Deck
 - https://youtu.be/GluBvGfK1_s 
+
+## Hardhat
+- https://github.com/Ash-394/DeSearch 
+
 ## Deployments
 ### Celo Alfajores Testnet
 - Contract Address: 0x09dEf7fd984bc9eDd7C3376C51732B48E73a06E8 (Verified and published)
