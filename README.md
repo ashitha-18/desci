@@ -15,7 +15,7 @@ DeSearch is a groundbreaking platform that addresses underfunding and lack of fo
 ## Pitch Deck
 - https://youtu.be/GluBvGfK1_s 
 
-## Hardhat
+## Hardhat - CONTRACTS DONE ON HARDHAT
 - https://github.com/Ash-394/DeSearch 
 
 ## Deployments
