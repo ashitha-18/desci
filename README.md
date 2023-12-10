@@ -5,6 +5,7 @@ DeSearch is a groundbreaking platform that addresses underfunding and lack of fo
 ## Tech Stack
 - Smart contract in Solidity
 - Frontend Using React
+- Styling using Tailwind CSS
 
 ## Hosted on vercel
 - https://desci-zeta.vercel.app/
