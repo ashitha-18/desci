@@ -6,6 +6,9 @@ DeSearch is a groundbreaking platform that addresses underfunding and lack of fo
 - Smart contract in Solidity
 - Frontend Using React
 
+## Hosted on vercel
+- https://desci-zeta.vercel.app/
+  
 ## Demo Video link
 - https://youtu.be/zYO39tXu5OU?si=Ksx-R1dhsZx_rbMp 
 
@@ -29,6 +32,12 @@ DeSearch is a groundbreaking platform that addresses underfunding and lack of fo
 - Voting Mechanism for Project Approval
 - Smart Contracts for Secure Transactions
 - Funding Allocation for Verified Women's Health Projects
+
+### Future scope
+- Integrating the voting mechanism into the frontend
+- Enabling users to connect with researchers and make valuable suggestions in improving the research
+- provide fund split for the project
+- Incentivise any contributions made to the research 
 
 # Getting Started with Create React App
 
