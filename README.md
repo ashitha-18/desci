@@ -9,7 +9,7 @@ DeSearch is a groundbreaking platform that addresses underfunding and lack of fo
 ## Demo Video link
 - https://youtu.be/zYO39tXu5OU?si=Ksx-R1dhsZx_rbMp 
 
-## Pitch Desk
+## Pitch Deck
 - https://youtu.be/GluBvGfK1_s 
 ## Deployments
 ### Celo Alfajores Testnet
