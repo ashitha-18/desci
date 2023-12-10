@@ -8,6 +8,9 @@ DeSearch is a groundbreaking platform that addresses underfunding and lack of fo
 
 ## Demo Video link
 - https://youtu.be/zYO39tXu5OU?si=Ksx-R1dhsZx_rbMp 
+
+## Pitch Desk
+- https://youtu.be/GluBvGfK1_s 
 ## Deployments
 ### Celo Alfajores Testnet
 - Contract Address: 0x09dEf7fd984bc9eDd7C3376C51732B48E73a06E8 (Verified and published)
