@@ -6,6 +6,8 @@ DeSearch is a groundbreaking platform that addresses underfunding and lack of fo
 - Smart contract in Solidity
 - Frontend Using React
 
+## Demo Video link
+- https://youtu.be/zYO39tXu5OU?si=Ksx-R1dhsZx_rbMp 
 ## Deployments
 ### Celo Alfajores Testnet
 - Contract Address: 0x09dEf7fd984bc9eDd7C3376C51732B48E73a06E8 (Verified and published)
